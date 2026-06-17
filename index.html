@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>RGUKT Content - Engineering </title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
-<style>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Engineering Portal – Diwakar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{
   --bg:#030508;--surface:#0a0d14;
@@ -145,88 +145,97 @@ body::after{content:'';position:fixed;inset:0;z-index:999;pointer-events:none;op
 
 .coming-soon{margin-top:18px;padding:20px;border-radius:12px;background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.1);text-align:center;color:var(--txt2);font-size:13px;}
 .lm .coming-soon{background:rgba(0,0,0,.03);border-color:rgba(0,0,0,.1);}
-  
 </style>
-  <meta name="google-site-verification" content="J4Q3jKfyx-UDArSXOxBPm9x9MUPd6t2j462fFEqXgYM" />
-  <meta name="google-adsense-account" content="ca-pub-1150692480692872">
-</head>
-<body>
-<div id="mesh"></div>
-<div id="grid-bg"></div>
-
-<nav id="topbar">
-  <span class="tb-logo" id="logoHome">⚙ EngPortal</span>
-  <div class="tb-divider"></div>
-  <button id="tb-back">← Back</button>
-  <div id="tb-crumb"></div>
-  <div style="flex:1"></div>
-  <div id="tb-search">
-    <span class="si">🔍</span>
-    <input type="text" id="searchInput" placeholder="Search branches…"/>
-    <button class="sx" id="searchClear">✕</button>
-  </div>
-  <div id="tb-theme" title="Toggle theme">🌙</div>
-</nav>
-
-<div id="viewport">
-
-  <!-- HOME PAGE -->
-  <div class="page active" id="pg-home">
-    <div class="home-eyebrow">🎓 Academic Resource Hub</div>
-    <h1 class="home-h1">Welcome to<br><span class="grad">Engineering Portal</span></h1>
-    <p class="home-sub">Your centralized hub for all engineering branch resources, notes, PYQs, and study materials — organized by semester.</p>
-    <div class="enter-card" id="enterBtn">
-      <div class="enter-card-orb">🏛️</div>
-      <div class="enter-card-name">Browse Branches</div>
-      <div class="enter-card-sub">Select your branch to access semester-wise notes & materials</div>
-      <div class="enter-card-cta">Explore All Branches <span class="arrow-anim">↓</span></div>
+  </head>
+  <body>
+    <div id="mesh">
     </div>
-    <div class="stat-row">
-      <div class="stat-pill"><span class="sp-n">8</span><span class="sp-l">Branches</span></div>
-      <div class="stat-pill"><span class="sp-n">64</span><span class="sp-l">Drive Folders</span></div>
-      <div class="stat-pill"><span class="sp-n">4</span><span class="sp-l">Years · 8 Sems</span></div>
+    <div id="grid-bg">
+    </div>
+    <nav id="topbar">
+      <span class="tb-logo" id="logoHome">⚙ EngPortal</span>
+      <div class="tb-divider">
+      </div>
+      <button id="tb-back">← Back</button>
+      <div id="tb-crumb">
+      </div>
+      <div style="flex:1">
+      </div>
+      <div id="tb-search">
+        <span class="si">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search branches…"/>
+        <button class="sx" id="searchClear">✕</button>
+      </div>
+      <div id="tb-theme" title="Toggle theme">🌙</div>
+    </nav>
+    <div id="viewport">
+      <!-- HOME PAGE -->
+      <div class="page active" id="pg-home">
+        <div class="home-eyebrow">🎓 Academic Resource Hub</div>
+        <h1 class="home-h1">Welcome to<br>
+          <span class="grad">Engineering Portal</span>
+        </h1>
+        <p class="home-sub">Your centralized hub for all engineering branch resources, notes, PYQs, and study materials — organized by semester.</p>
+        <div class="enter-card" id="enterBtn">
+          <div class="enter-card-orb">🏛️</div>
+          <div class="enter-card-name">Browse Branches</div>
+          <div class="enter-card-sub">Select your branch to access semester-wise notes & materials</div>
+          <div class="enter-card-cta">Explore All Branches <span class="arrow-anim">↓</span>
+        </div>
+      </div>
+      <div class="stat-row">
+        <div class="stat-pill">
+          <span class="sp-n">8</span>
+          <span class="sp-l">Branches</span>
+        </div>
+        <div class="stat-pill">
+          <span class="sp-n">64</span>
+          <span class="sp-l">Drive Folders</span>
+        </div>
+        <div class="stat-pill">
+          <span class="sp-n">4</span>
+          <span class="sp-l">Years · 8 Sems</span>
+        </div>
+      </div>
+    </div>
+    <!-- BRANCHES PAGE -->
+    <div class="page" id="pg-branches">
+      <div class="pg-header">
+        <div class="pg-tag">📚 All Branches</div>
+        <h2 class="pg-title">Engineering Branches</h2>
+        <p class="pg-sub">Select your branch to explore year-wise semester materials.</p>
+      </div>
+      <div class="g8" id="branchGrid">
+      </div>
+    </div>
+    <!-- YEARS PAGE -->
+    <div class="page" id="pg-years">
+      <div id="yearBanner">
+      </div>
+      <div class="pg-header">
+        <div class="pg-tag">📅 Academic Years</div>
+        <h2 class="pg-title" id="yearPageTitle">Select Year</h2>
+        <p class="pg-sub">Choose your academic year to access semester resources.</p>
+      </div>
+      <div class="g4" id="yearGrid">
+      </div>
+    </div>
+    <!-- SEMESTERS PAGE -->
+    <div class="page" id="pg-sems">
+      <div id="semBanner">
+      </div>
+      <div class="pg-header">
+        <div class="pg-tag">📖 Semesters</div>
+        <h2 class="pg-title" id="semPageTitle">Semesters</h2>
+        <p class="pg-sub" id="semPageSub">Access notes, PYQs and study materials.</p>
+      </div>
+      <div class="g2" id="semGrid">
+      </div>
     </div>
   </div>
-
-  <!-- BRANCHES PAGE -->
-  <div class="page" id="pg-branches">
-    <div class="pg-header">
-      <div class="pg-tag">📚 All Branches</div>
-      <h2 class="pg-title">Engineering Branches</h2>
-      <p class="pg-sub">Select your branch to explore year-wise semester materials.</p>
-    </div>
-    <div class="g8" id="branchGrid"></div>
+  <div id="toast">
   </div>
-
-  <!-- YEARS PAGE -->
-  <div class="page" id="pg-years">
-    <div id="yearBanner"></div>
-    <div class="pg-header">
-      <div class="pg-tag">📅 Academic Years</div>
-      <h2 class="pg-title" id="yearPageTitle">Select Year</h2>
-      <p class="pg-sub">Choose your academic year to access semester resources.</p>
-    </div>
-    <div class="g4" id="yearGrid"></div>
-  </div>
-
-  <!-- SEMESTERS PAGE -->
-  <div class="page" id="pg-sems">
-    <div id="semBanner"></div>
-    <div class="pg-header">
-      <div class="pg-tag">📖 Semesters</div>
-      <h2 class="pg-title" id="semPageTitle">Semesters</h2>
-      <p class="pg-sub" id="semPageSub">Access notes, PYQs and study materials.</p>
-    </div>
-    <div class="g2" id="semGrid"></div>
-  </div>
-
-</div>
-
-<div id="toast"></div>
-
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1150692480692872"
-     crossorigin="anonymous">
+  <script>
 // ── DATA ─────────────────────────────────────────────────────────────────────
 const BRANCHES = [
   {
@@ -251,406 +260,4 @@ const BRANCHES = [
     id:'mme', name:'MME', full:'Metallurgical & Materials Engineering', icon:'🔩', color:'#f59e0b',
     paths:{
       1:{ 1:'https://drive.google.com/drive/folders/1B0CPY2HmQMgYR1qsqPgXtbhPiMNgTSko', 2:'https://drive.google.com/drive/folders/1JGLbt_UYqIyKQIywOFHTD_Ya2lsYykea' },
-      2:{ 3:'https://drive.google.com/drive/folders/1BCZJKXMo_g_PYdIGrWDm7Blfp4knLA5u', 4:'https://drive.google.com/drive/folders/12C8C8Y3Eet0o0_pl05SekF3S_nZSsZTL' },
-      3:{ 5:'https://drive.google.com/drive/folders/19RKZni8CtqkSpj6EmLtRn-2eyhYGBJ0V', 6:'https://drive.google.com/drive/folders/1nyY0RcPGGxu9y5zF8h7TQXN4Xu8FHJMX' },
-      4:{ 7:'https://drive.google.com/drive/folders/1Vcb6wMiRi9fyr2ILlSAklCtg0IWShdlV', 8:'https://drive.google.com/drive/folders/1AYMhcexoTtb3IT13n1Uu1fLaKGSjfzz1' }
-    }
-  },
-  {
-    id:'ch', name:'CHEM', full:'Chemical Engineering', icon:'🧪', color:'#8b5cf6',
-    paths:{
-      1:{ 1:'https://drive.google.com/drive/folders/151hXTvJWykKPX39pRIZ_OiSFLHoupYsF', 2:'https://drive.google.com/drive/folders/1Irm7QlSlHwj2KdgI8wqMRmP4aaA5he4Z' },
-      2:{ 3:'https://drive.google.com/drive/folders/1qOzfEawMPtZdbEKf9xOKLyEDy1FLyAJ_', 4:'https://drive.google.com/drive/folders/1FFH-6IX6tjOodYjJulvFy2cSLgbuPOX2' },
-      3:{ 5:'https://drive.google.com/drive/folders/1cGrUsOR8xcZ5p1Now1_856Zsy__lHWO-', 6:'https://drive.google.com/drive/folders/1jVyoRZ9bBd6r-j7rJNKdqGFsyHNrSjDM' },
-      4:{ 7:'https://drive.google.com/drive/folders/1GXcD4hG_lQPeqlYcDE1Sy-8EBOoJ01W4', 8:'https://drive.google.com/drive/folders/1lyCxNu0hcAZYYpUFrpQ_a-e_8jVgL2vT' }
-    }
-  },
-  {
-    id:'me', name:'MECH', full:'Mechanical Engineering', icon:'⚙️', color:'#ef4444',
-    paths:{
-      1:{ 1:'https://drive.google.com/drive/folders/1E8CBsPpC5-VVtbqce7Ak638VNjNXeCbA', 2:'https://drive.google.com/drive/folders/10dzZzuX8XK9_72LJK_69_X9hXEB858OI' },
-      2:{ 3:'https://drive.google.com/drive/folders/1WBzCIO358T0DMzdXPrdZUFGJFBP4Uo64', 4:'https://drive.google.com/drive/folders/1ZmNY6Ik6Tsxkg_2Rqik9_uOdEXFNtQS-' },
-      3:{ 5:'https://drive.google.com/drive/folders/1fzYcG8MQQRJ7loufQHyewlregNcOkC4v', 6:'https://drive.google.com/drive/folders/1sa6T_pA4C5y0IP0c-FKr-l5iGjqMSYBX' },
-      4:{ 7:'https://drive.google.com/drive/folders/17ZL9WiX5L1w2oYbL1ax0ce7v7rfMGlFL', 8:'https://drive.google.com/drive/folders/16kdFAQWMqGaIhqLMdaRcPE_i47SJEB4A' }
-    }
-  },
-  {
-    id:'eee', name:'EEE', full:'Electrical & Electronics Engineering', icon:'⚡', color:'#eab308',
-    paths:{
-      1:{ 1:'https://drive.google.com/drive/folders/11ZOQuP2k6pI74OcjBmvdcwexdeZaYWsM', 2:'https://drive.google.com/drive/folders/1N4pD0kwoEMc1QJcQYZaU-BMVZVfTj2j_' },
-      2:{ 3:'https://drive.google.com/drive/folders/1vyUC26kxQ-AFyHMAkO9oxDmwkmGAF6ut', 4:'https://drive.google.com/drive/folders/1CPK1irNkdoEFwd7-GzQDuqSuXEkRKVuB' },
-      3:{ 5:'https://drive.google.com/drive/folders/1WwIvYBL431-FNy0a8aB8C0sGMPOIp47M', 6:'https://drive.google.com/drive/folders/1xPygUhw_Zn7abFEtVHVJItYda5mlLDZZ' },
-      4:{ 7:'https://drive.google.com/drive/folders/1Y4JryCIE8n7AsiVXRpfx-dLjQtUDNBw2', 8:'https://drive.google.com/drive/folders/1KtRk0BOVzTZC1ErfMe_j2GkcfRv-3YfR' }
-    }
-  },
-  {
-    id:'ce', name:'CIVIL', full:'Civil Engineering', icon:'🏗️', color:'#84cc16',
-    paths:{
-      1:{ 1:'https://drive.google.com/drive/folders/1tOrsSl0sB1TV6fyLki3lwYvi9AkOQMwj', 2:'https://drive.google.com/drive/folders/1zzQXmjQmAufHP4_2MtILQHLF-2unlOmV' },
-      2:{ 3:'https://drive.google.com/drive/folders/1FmthHvVdxNy_5AhfX5Zqs2KL3Ad7LDGA', 4:'https://drive.google.com/drive/folders/1VGvTjhD_0AVy0vLSiN-YekkXjKqJSU7W' },
-      3:{ 5:'https://drive.google.com/drive/folders/1DRqu-tnAlvceDeKPHqx_KstIIx94tP0o', 6:'https://drive.google.com/drive/folders/1C_Q88xKDQePRzIgwv4uyCgud00LAsQU9' },
-      4:{ 7:'https://drive.google.com/drive/folders/17NHAgCHvsB6KG_xopbza9R11xt6MTp4C', 8:'https://drive.google.com/drive/folders/1finfeeQSp7YV-vpOWd6KNs84TUNQGmKC' }
-    }
-  },
-  {
-    id:'aiml', name:'AI & ML', full:'Artificial Intelligence & Machine Learning', icon:'🤖', color:'#f97316',
-    paths:{
-      1:{ 1:'https://drive.google.com/drive/folders/1RcffR8nx9aWvvM1UTx_2HGjp_ucO3dIi', 2:'https://drive.google.com/drive/folders/1pxkAMRf1YlK8bNa_cszNxZfHrpinEJYc' },
-      2:{ 3:'https://drive.google.com/drive/folders/19_kKjl0goA_vY9YdDZF8WyVvxMA-2Vtd', 4:'https://drive.google.com/drive/folders/1qG-Z0s_iGzpBa2Cot4o8vaEHLm0iPgpl' },
-      3:{ 5:'https://drive.google.com/drive/folders/1AxLXxcTqGEVH15zpl6mlhx3IyrnPhKtn', 6:'https://drive.google.com/drive/folders/1N_pwdA4ElwwLxeQmo2uOUsIdZVQ9MBss' },
-      4:{ 7:'https://drive.google.com/drive/folders/1YkZiLJNkZ5foGRTOCW98IzuDWq8Edvby', 8:'https://drive.google.com/drive/folders/1lWCKSybnU-_zW77uY70gSF526SeYX8Nh' }
-    }
-  }
-];
-
-const YEAR_LABELS = {1:'First Year',2:'Second Year',3:'Third Year',4:'Fourth Year'};
-const SEM_COLORS = ['#7c6bf5','#06b6d4','#10b981','#f59e0b','#ef4444','#8b5cf6','#ec4899','#84cc16'];
-
-// ── STATE ────────────────────────────────────────────────────────────────────
-let currentBranch = null;
-let currentYear   = null;
-let navStack      = []; // internal stack of page ids
-// Each entry: { pageId, branchId, year }
-let _snapshots    = [];
-let _ignoreHash   = false;
-
-// ── HASH-BASED BACK BUTTON (works cross-origin / sandboxed) ──────────────────
-// We maintain a parallel array _snapshots that mirrors the browser hash history.
-// Each navigation pushes a unique hash like #s0, #s1, #s2...
-// When the phone back button fires hashchange, we look up the snapshot and restore it.
-
-function _saveSnapshot(pageId) {
-  const snap = {
-    pageId,
-    navStack: [...navStack],
-    branchId: currentBranch ? currentBranch.id : null,
-    year: currentYear
-  };
-  _snapshots.push(snap);
-  _ignoreHash = true;
-  try { location.hash = 's' + (_snapshots.length - 1); } catch(e){}
-  setTimeout(() => { _ignoreHash = false; }, 100);
-}
-
-function _restoreSnapshot(idx) {
-  const snap = _snapshots[idx];
-  if (!snap) return;
-  currentBranch = snap.branchId ? BRANCHES.find(b => b.id === snap.branchId) : null;
-  currentYear   = snap.year || null;
-  navStack      = [...snap.navStack];
-  // Rebuild content
-  if (snap.pageId === 'pg-branches') {
-    buildBranches('');
-  } else if (snap.pageId === 'pg-years' && currentBranch) {
-    buildYearPage(currentBranch);
-  } else if (snap.pageId === 'pg-sems' && currentBranch && currentYear) {
-    buildSemPage(currentBranch, currentYear);
-  }
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById(snap.pageId).classList.add('active');
-  document.getElementById('viewport').scrollTop = 0;
-  updateNav();
-}
-
-window.addEventListener('hashchange', () => {
-  if (_ignoreHash) return;
-  const h = location.hash.replace('#','');
-  if (h.startsWith('s')) {
-    const idx = parseInt(h.slice(1));
-    if (!isNaN(idx) && _snapshots[idx]) {
-      _restoreSnapshot(idx);
-      // Trim future snapshots so forward nav is clean
-      _snapshots = _snapshots.slice(0, idx + 1);
-    }
-  }
-});
-
-// ── HELPERS ──────────────────────────────────────────────────────────────────
-function showPage(id) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  document.getElementById('viewport').scrollTop = 0;
-  navStack.push(id);
-  _saveSnapshot(id);
-  updateNav();
-}
-
-function goBack() {
-  if (navStack.length <= 1) return;
-  // Go back one hash step
-  _ignoreHash = false;
-  window.history.go(-1);
-}
-
-function updateNav() {
-  const cur = navStack[navStack.length - 1];
-  const backBtn = document.getElementById('tb-back');
-  const crumb   = document.getElementById('tb-crumb');
-
-  backBtn.classList.toggle('show', navStack.length > 1);
-
-  crumb.innerHTML = '';
-  const parts = [];
-  if (navStack.includes('pg-branches')) parts.push({label:'Branches', page:'pg-branches'});
-  if (currentBranch && (cur === 'pg-years' || cur === 'pg-sems')) parts.push({label:currentBranch.name, page:'pg-years'});
-  if (currentYear  && cur === 'pg-sems') parts.push({label:'Year '+currentYear, page:null});
-
-  parts.forEach((p, i) => {
-    if (i > 0) {
-      const sep = document.createElement('span');
-      sep.className = 'crumb-sep'; sep.textContent = '/';
-      crumb.appendChild(sep);
-    }
-    if (p.page && i < parts.length - 1) {
-      const a = document.createElement('span');
-      a.className = 'crumb-link'; a.textContent = p.label;
-      a.addEventListener('click', () => {
-        if (p.page === 'pg-branches') {
-          while (navStack[navStack.length-1] !== 'pg-branches') navStack.pop();
-          document.querySelectorAll('.page').forEach(pg => pg.classList.remove('active'));
-          document.getElementById('pg-branches').classList.add('active');
-          document.getElementById('viewport').scrollTop = 0;
-          _saveSnapshot('pg-branches');
-          updateNav();
-        } else if (p.page === 'pg-years') {
-          while (navStack[navStack.length-1] !== 'pg-years') navStack.pop();
-          document.querySelectorAll('.page').forEach(pg => pg.classList.remove('active'));
-          document.getElementById('pg-years').classList.add('active');
-          document.getElementById('viewport').scrollTop = 0;
-          _saveSnapshot('pg-years');
-          updateNav();
-        }
-      });
-      crumb.appendChild(a);
-    } else {
-      const s = document.createElement('span');
-      s.className = 'crumb-cur'; s.textContent = p.label;
-      crumb.appendChild(s);
-    }
-  });
-}
-
-let toastTimer;
-function toast(msg) {
-  const el = document.getElementById('toast');
-  el.textContent = msg;
-  el.classList.add('show');
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => el.classList.remove('show'), 2800);
-}
-
-// ── BUILD BRANCHES ────────────────────────────────────────────────────────────
-function buildBranches(filter) {
-  const grid = document.getElementById('branchGrid');
-  grid.innerHTML = '';
-  const list = filter ? BRANCHES.filter(b =>
-    b.name.toLowerCase().includes(filter) || b.full.toLowerCase().includes(filter)
-  ) : BRANCHES;
-
-  if (!list.length) {
-    grid.innerHTML = '<div class="coming-soon" style="grid-column:1/-1">No branches match your search.</div>';
-    return;
-  }
-
-  list.forEach(b => {
-    const card = document.createElement('div');
-    card.className = 'bc';
-    card.style.setProperty('--cc', b.color);
-    const semCount = Object.values(b.paths).reduce((a,y) => a + Object.keys(y).length, 0);
-    card.innerHTML = `
-      <div class="bc-ico" style="background:color-mix(in srgb,${b.color} 18%,transparent);border:1px solid color-mix(in srgb,${b.color} 35%,transparent)">${b.icon}</div>
-      <div class="bc-name">${b.name}</div>
-      <div class="bc-full">${b.full}</div>
-      <div class="bc-foot">
-        <span class="chip" style="color:${b.color};border-color:color-mix(in srgb,${b.color} 35%,transparent);background:color-mix(in srgb,${b.color} 10%,transparent)">${semCount} sems</span>
-        <span class="bc-arr" style="color:${b.color}">→</span>
-      </div>`;
-    card.addEventListener('click', () => openBranch(b));
-    grid.appendChild(card);
-  });
-}
-
-// ── BUILD YEARS ───────────────────────────────────────────────────────────────
-function buildYearPage(b) {
-  document.getElementById('yearPageTitle').textContent = b.name + ' — Select Year';
-  document.getElementById('yearBanner').innerHTML = `
-    <div class="branch-banner" style="--bc:${b.color}">
-      <div class="bb-ico" style="background:color-mix(in srgb,${b.color} 18%,transparent);border:1px solid color-mix(in srgb,${b.color} 30%,transparent)">${b.icon}</div>
-      <div>
-        <div class="bb-name">${b.name}</div>
-        <div class="bb-full">${b.full}</div>
-        <div style="display:flex;gap:6px;flex-wrap:wrap;">
-          ${Object.keys(b.paths).map(y=>`<span class="chip" style="color:${b.color};border-color:color-mix(in srgb,${b.color} 30%,transparent);background:color-mix(in srgb,${b.color} 10%,transparent)">Year ${y}</span>`).join('')}
-        </div>
-      </div>
-    </div>`;
-  const grid = document.getElementById('yearGrid');
-  grid.innerHTML = '';
-  Object.entries(b.paths).forEach(([yr, sems]) => {
-    const y = parseInt(yr);
-    const card = document.createElement('div');
-    card.className = 'yc';
-    card.style.setProperty('--yc', b.color);
-    const semNums = Object.keys(sems);
-    card.innerHTML = `
-      <div class="yc-num">${y}</div>
-      <div class="yc-lbl">${YEAR_LABELS[y]}</div>
-      <div class="yc-sems">
-        ${semNums.map(s=>`<span class="chip" style="color:${b.color};border-color:color-mix(in srgb,${b.color} 30%,transparent);background:color-mix(in srgb,${b.color} 10%,transparent)">Sem ${s}</span>`).join('')}
-      </div>
-      <div class="yc-arr">View Semesters →</div>`;
-    card.addEventListener('click', () => openYear(b, y));
-    grid.appendChild(card);
-  });
-}
-
-function openBranch(b) {
-  currentBranch = b;
-  buildYearPage(b);
-  showPage('pg-years');
-}
-
-// ── BUILD SEMESTERS ───────────────────────────────────────────────────────────
-function buildSemPage(b, yr) {
-  const sems = b.paths[yr];
-  document.getElementById('semPageTitle').textContent = `${b.name} · Year ${yr} · ${YEAR_LABELS[yr]}`;
-  document.getElementById('semPageSub').textContent = `${Object.keys(sems).length} semester(s) available for ${b.full}`;
-  document.getElementById('semBanner').innerHTML = `
-    <div class="branch-banner" style="--bc:${b.color}">
-      <div class="bb-ico" style="background:color-mix(in srgb,${b.color} 18%,transparent);border:1px solid color-mix(in srgb,${b.color} 30%,transparent)">${b.icon}</div>
-      <div>
-        <div class="bb-name">${b.name} · Year ${yr}</div>
-        <div class="bb-full">${b.full} — ${YEAR_LABELS[yr]}</div>
-      </div>
-    </div>`;
-  const grid = document.getElementById('semGrid');
-  grid.innerHTML = '';
-  Object.entries(sems).forEach(([sem, url]) => {
-    const s = parseInt(sem);
-    const col = SEM_COLORS[(s-1) % SEM_COLORS.length];
-    const card = document.createElement('div');
-    card.className = 'sc';
-    card.style.setProperty('--sc', col);
-    card.innerHTML = `
-      <div class="sc-orb"></div>
-      <div class="sc-code">S${s}</div>
-      <span class="sc-lbl">Semester ${s} · ${b.name} · Year ${yr}</span>
-      <div class="sc-path">${url || '⚠️ Link not yet available'}</div>
-      <button class="sc-btn" data-url="${url || ''}">${url ? '📂 Open Drive Folder' : '🔒 Coming Soon'}</button>`;
-    card.querySelector('.sc-btn').addEventListener('click', (e) => {
-      e.stopPropagation();
-      const link = e.currentTarget.dataset.url;
-      if (link && !link.includes('placeholder')) {
-        window.open(link, '_blank', 'noopener,noreferrer');
-        toast('Opening Semester ' + s + ' folder…');
-      } else {
-        toast('⚠️ Drive link not yet added for this semester.');
-      }
-    });
-    grid.appendChild(card);
-  });
-}
-
-function openYear(b, yr) {
-  currentYear = yr;
-  buildSemPage(b, yr);
-  showPage('pg-sems');
-}
-
-// ── INIT ──────────────────────────────────────────────────────────────────────
-document.addEventListener('DOMContentLoaded', () => {
-  navStack = ['pg-home'];
-  _snapshots = [{ pageId:'pg-home', navStack:['pg-home'], branchId:null, year:null }];
-  _ignoreHash = true;
-  try { location.hash = 's0'; } catch(e){}
-  setTimeout(() => { _ignoreHash = false; }, 100);
-
-  // Enter button → branches
-  document.getElementById('enterBtn').addEventListener('click', (e) => {
-    e.preventDefault();
-    buildBranches('');
-    showPage('pg-branches');
-  });
-
-  // Logo → home
-  document.getElementById('logoHome').addEventListener('click', () => {
-    navStack = ['pg-home'];
-    currentBranch = null;
-    currentYear   = null;
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.getElementById('pg-home').classList.add('active');
-    document.getElementById('viewport').scrollTop = 0;
-    _snapshots = [{ pageId:'pg-home', navStack:['pg-home'], branchId:null, year:null }];
-    _ignoreHash = true;
-    try { location.hash = 's0'; } catch(e){}
-    setTimeout(() => { _ignoreHash = false; }, 100);
-    updateNav();
-  });
-
-  // Back button
-  document.getElementById('tb-back').addEventListener('click', () => goBack());
-
-  // Search
-  const searchInput = document.getElementById('searchInput');
-  const searchClear = document.getElementById('searchClear');
-  searchInput.addEventListener('input', (e) => {
-    const val = e.target.value.trim().toLowerCase();
-    searchClear.classList.toggle('on', val.length > 0);
-    const cur = navStack[navStack.length - 1];
-    if (cur !== 'pg-branches') {
-      buildBranches(val);
-      // navigate to branches without adding duplicate
-      if (cur !== 'pg-branches') {
-        document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-        document.getElementById('pg-branches').classList.add('active');
-        document.getElementById('viewport').scrollTop = 0;
-        if (navStack[navStack.length-1] !== 'pg-branches') navStack.push('pg-branches');
-        updateNav();
-      }
-    } else {
-      buildBranches(val);
-    }
-  });
-  searchClear.addEventListener('click', () => {
-    searchInput.value = '';
-    searchClear.classList.remove('on');
-    buildBranches('');
-  });
-
-  // Theme toggle
-  let dark = true;
-  document.getElementById('tb-theme').addEventListener('click', () => {
-    dark = !dark;
-    document.body.classList.toggle('lm', !dark);
-    document.getElementById('tb-theme').textContent = dark ? '🌙' : '☀️';
-  });
-
-  // Pre-build branch grid
-  buildBranches('');
-});
-  
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAi_rBo_B30A8m8YsnzTan5sayo74wle4w",
-    authDomain: "rgukt-content-5d16c.firebaseapp.com",
-    projectId: "rgukt-content-5d16c",
-    storageBucket: "rgukt-content-5d16c.firebasestorage.app",
-    messagingSenderId: "291273200607",
-    appId: "1:291273200607:web:08c217f2034dd3dedaaa6a",
-    measurementId: "G-JX611NY51Y"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-
-</script>
-</body>
-</html>
+      2:{ 3:'https://drive.google.com/drive/folders/
